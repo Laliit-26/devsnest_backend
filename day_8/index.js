@@ -18,15 +18,15 @@ const bodyparser = require('body-parser');
 
 
 
-const check= (req, res, next) => {
-     console.log("middleware");
-    if (req.query.admin === 'true') {
-        next();
-    }
-        else {
-         res.status(400).send("must be admin");
-     }
-}
+// const check= (req, res, next) => {
+//      console.log("middleware");
+//     if (req.query.admin === 'true') {
+//         next();
+//     }
+//         else {
+//          res.status(400).send("must be admin");
+//      }
+// }
 // app.use(bodyparser.json());   <-- if using raw json data
 // app.use(bodyparser.urlencoded({extended:true})) <-- if using form data
 // app.use(check);
