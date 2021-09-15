@@ -1,0 +1,83 @@
+For String
+
+SET
+
+GET - get the set value. works only with string
+
+DEL
+
+EXISTS - to check the key exist
+
+KEYS * - shows all the key value pairs
+
+FLUSHALL - deletes all pairs
+
+TTL - how long the key will be valid, after that expired
+
+-1 : no expiry
+
+-2: expired
+
+SETEX - automatically delete after specified time
+
+For arrays:
+
+LPUSH - insert at first index
+
+RPUSH - insert at last index
+
+LPOP - Delete at first index
+
+RPOP - Delete at last index
+
+LRANGE - like for loop, 
+
+For Set:
+
+SADD - add data in set
+
+SMEMBERS - to see all the data of the set
+
+For Hashes(object):
+
+HSET - to set all values in a hash (object)
+
+HGET - to get a value of a particular key from a hash
+
+HGET - to get all the value of the hash(object)
+
+HDEL - to delete from the hash(object)
+
+HEXISTS - to check exists or not
+
+POSTGRES
+
+psql -U postgres: to login first time
+
+CREATE USER user_name WITH PASSWORD password; :- to create a new user with password
+
+CREATE DATBASE database_name;
+
+DROP DATBASE database_name; : - to delete the complete database 
+
+GRANT ALL PRIVILIGES ON DATABASE database_name;
+
+\l - to list all available databases
+
+\d - to see list of table
+
+\d table_name- to see to columns of table_name
+
+\q - to quit postgres
+
+\c database name - to connect with database
+
+create schema schema_name ->schema is just like a folder
+
+create table schema_name.tale_name;- to create table inside schema
+
+\d schema_name.tale_name - to access table inside schema
+
+drop schema schema_name cascade - without cascade we can delete schema
+
+
